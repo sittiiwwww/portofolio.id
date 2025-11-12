@@ -1,0 +1,229 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Branding Strategy for Female Cosmetics</title>
+	<link rel="stylesheet" href="/botostrap-grid.css" type="text/css">
+	<link rel="stylesheet" href="/styles.css" type="text/css">
+	<link href="https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+	<style>
+		.project-container {
+			background-color: white;
+			max-width: 1200px;
+			margin: 0 auto;
+			box-shadow: 0 0 30px rgba(0,0,0,0.1);
+		}
+		.full-width-image {
+			width: 100%;
+			height: 500px;
+			object-fit: cover;
+		}
+		.breadcrumb {
+			padding: 20px;
+			background-color: #f8f9fa;
+			font-family: 'IBM Plex Mono', monospace;
+			font-size: 14px;
+		}
+		.breadcrumb a {
+			color: black;
+			text-decoration: none;
+		}
+		.breadcrumb a:hover {
+			text-decoration: underline;
+		}
+		.project-title {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			font-size: 50pt;
+			transform: translate(-50%, -50%);
+			color: white;
+			text-align: center;
+			text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+		}
+		.image-container {
+			position: relative;
+		}
+		
+		/* Slider Styles */
+		.project-slider {
+			position: relative;
+			width: 100%;
+			overflow: hidden;
+		}
+		.slider-container {
+			display: flex;
+			transition: transform 0.5s ease;
+			width: 300%;
+		}
+		.slider-slide {
+			width: 33.33%;
+			flex-shrink: 0;
+		}
+		.slider-slide img {
+			width: 100%;
+			height: 500px;
+			object-fit: cover;
+		}
+		.slider-controls {
+			position: absolute;
+			bottom: 20px;
+			left: 50%;
+			transform: translateX(-50%);
+			display: flex;
+			gap: 10px;
+		}
+		.slider-dot {
+			width: 10px;
+			height: 10px;
+			background-color: rgba(255,255,255,0.5);
+			border-radius: 50%;
+			cursor: pointer;
+			transition: background-color 0.3s;
+		}
+		.slider-dot.active {
+			background-color: white;
+		}
+		
+		/* Slider Checkbox Hack */
+		.slider-toggle {
+			display: none;
+		}
+		#slide1:checked ~ .slider-container {
+			transform: translateX(0);
+		}
+		#slide2:checked ~ .slider-container {
+			transform: translateX(-33.33%);
+		}
+		#slide3:checked ~ .slider-container {
+			transform: translateX(-66.66%);
+		}
+	</style>
+</head>
+
+<body>
+	<nav>
+		<ul>
+			<li><a href="../index.html#contact">contact</a></li>
+			<li>works</li>
+			<li>expertience</li>
+			<li class="empty"></li>
+			<li>behance</li>
+			<li><a href="https://www.instagram.com/ryukaa4_?igsh=MzZuc3VyeThqYW1m" target="_blank">instagram</a></li>
+			<li>linkedin</li>
+		</ul>
+	</nav>
+
+	<div class="project-container">
+		<div class="image-container">
+			<img src="/fashion.jpg" class="full-width-image" alt="Cosmetics Branding Project">
+			<h1 class="project-title">Branding Strategy<br>for Female Cosmetics</h1>
+		</div>
+		<div class="breadcrumb">
+			<a href="../index.html">Home</a> / Branding Strategy for Female Cosmetics
+		</div>
+		<section class="project" style="padding-top: 50px;">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm">
+						<h2>Project Overview</h2>
+						<p>Strategi merek untuk Luxe Fashion Innovations adalah pendekatan komprehensif untuk memposisikan ulang lini busana wanita mereka di pasar mode yang sangat kompetitif. Sasaran kami adalah menciptakan identitas merek yang unik dan relevan, selaras dengan wanita modern yang percaya diri, berdaya, dan memiliki selera tinggi terhadap gaya yang autentik serta berkelanjutan.</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="project blue">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm">
+						<h2>Research & Discovery</h2>
+						<p>Melakukan riset pasar mendalam yang mencakup:</p>
+						<ul>
+							<li>Wawancara pengguna dengan lebih dari 250 peserta dari demografi target</li>
+							<li>Analisis kompetitif dari 10 merek fashion teratas di segmen premium</li>
+							<li>Pemetaan tren gaya hidup dan preferensi konsumen terhadap fashion berkelanjutan dan personalisasi</li>
+							<li>Pengembangan profil psikografis segmen konsumen target</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="project">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm">
+						<h2>Brand Identity Development</h2>
+						<p>Menciptakan identitas merek holistik yang berfokus pada::</p>
+						<ul>
+							<li>Bahasa visual yang minimalis namun elegan, mencerminkan keanggunan modern</li>
+							<li>Palet warna yang terinspirasi dari nuansa kain alami dan tekstur bumi</li>
+							<li>Tipografi yang menonjolkan keanggunan, kekuatan, dan kepercayaan diri feminin</li>
+							<li>Desain kemasan dan label yang ramah lingkungan dengan estetika modern</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="project blue">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm">
+						<h2>Key Outcomes</h2>
+						<p>Strategi rebranding menghasilkan:</p>
+						<ul>
+							<li>Peningkatan pengenalan merek sebesar 35% di segmen target</li>
+							<li>Keterlibatan media sosial meningkat 42%, terutama melalui kampanye gaya hidup digital</li>
+							<li>Penjualan koleksi baru meningkat 25% pada kuartal pertama setelah peluncuran</li>
+							<li>Dianugerahi “Most Innovative Fashion Branding” oleh Design Excellence Awards</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="project">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm">
+						<h2>Project Gallery</h2>
+						<div class="project-slider">
+							<input type="radio" name="slider" id="slide1" class="slider-toggle" checked>
+							<input type="radio" name="slider" id="slide2" class="slider-toggle">
+							<input type="radio" name="slider" id="slide3" class="slider-toggle">
+							
+							<div class="slider-container">
+								<div class="slider-slide">
+									<img src="/fashion.jpg" alt="Dashboard App">
+								</div>
+								<div class="slider-slide">
+									<img src="./img/cosmetics2.jpg" alt="Cosmetics Project">
+								</div>
+								<div class="slider-slide">
+									<img src="./img/cosmetics3.jpg" alt="iPad App">
+								</div>
+							</div>
+							
+							<div class="slider-controls">
+								<label for="slide1" class="slider-dot"></label>
+								<label for="slide2" class="slider-dot"></label>
+								<label for="slide3" class="slider-dot"></label>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</div>
+
+	<footer id="contact">
+		<h2>Interested in<br>
+			learning more?<br>sijaar@gmail.com</h2>
+			<p>designed & developed by Siti hajar 2025</p>
+		</footer>
+	<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'99d6291ae8cb3231',t:'MTc2Mjk1MTg4Mw=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+	</html>

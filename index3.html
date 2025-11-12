@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>User Experience Design for Dashboard App</title>
+	<link rel="stylesheet" href="/botostrap-grid.css" type="text/css">
+	<link rel="stylesheet" href="/styles.css" type="text/css">
+	<link href="https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+	<style>
+		.project-container {
+			background-color: white;
+			max-width: 1200px;
+			margin: 0 auto;
+			box-shadow: 0 0 30px rgba(0,0,0,0.1);
+		}
+		.full-width-image {
+			width: 100%;
+			height: 500px;
+			object-fit: cover;
+		}
+		.breadcrumb {
+			padding: 20px;
+			background-color: #f8f9fa;
+			font-family: 'IBM Plex Mono', monospace;
+			font-size: 14px;
+		}
+		.breadcrumb a {
+			color: black;
+			text-decoration: none;
+		}
+		.breadcrumb a:hover {
+			text-decoration: underline;
+		}
+		.project-title {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			font-size: 40pt;
+			transform: translate(-50%, -50%);
+			color: white;
+			text-align: center;
+			text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+		}
+		.image-container {
+			position: relative;
+		}
+		
+		/* Slider Styles */
+		.project-slider {
+			position: relative;
+			width: 100%;
+			overflow: hidden;
+		}
+		.slider-container {
+			display: flex;
+			transition: transform 0.5s ease;
+			width: 300%;
+		}
+		.slider-slide {
+			width: 33.33%;
+			flex-shrink: 0;
+		}
+		.slider-slide img {
+			width: 100%;
+			height: 500px;
+			object-fit: cover;
+		}
+		.slider-controls {
+			position: absolute;
+			bottom: 20px;
+			left: 50%;
+			transform: translateX(-50%);
+			display: flex;
+			gap: 10px;
+		}
+		.slider-dot {
+			width: 10px;
+			height: 10px;
+			background-color: rgba(255,255,255,0.5);
+			border-radius: 50%;
+			cursor: pointer;
+			transition: background-color 0.3s;
+		}
+		.slider-dot.active {
+			background-color: white;
+		}
+		
+		/* Slider Checkbox Hack */
+		.slider-toggle {
+			display: none;
+		}
+		#slide1:checked ~ .slider-container {
+			transform: translateX(0);
+		}
+		#slide2:checked ~ .slider-container {
+			transform: translateX(-33.33%);
+		}
+		#slide3:checked ~ .slider-container {
+			transform: translateX(-66.66%);
+		}
+	</style>
+</head>
+
+<body>
+	<nav>
+		<ul>
+			<li><a href="../index.html#contact">contact</a></li>
+			<li>works</li>
+			<li>expertience</li>
+			<li class="empty"></li>
+			<li>behance</li>
+			<li><a href="https://www.instagram.com/ryukaa4_?igsh=MzZuc3VyeThqYW1m" target="_blank">Instagram</a></li>
+			<li>linkedin</li>
+		</ul>
+	</nav>
+
+	<div class="project-container">
+		<div class="image-container">
+			<img src="/makeup.jpg" class="full-width-image" alt="Dashboard Makeup">
+			<h1 class="project-title">User Experience Design<br>for Dashboard App</h1>
+		</div>
+		<div class="breadcrumb">
+			<a href="../index.html">Home</a> / User Experience Design for Dashboard App
+		</div>
+		<section class="project" style="padding-top: 50px;">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm">
+						<h2>Project Overview</h2>
+						<p>Merancang pengalaman kecantikan menyeluruh untuk brand makeup inovatif yang berfokus pada personalisasi dan kemudahan penggunaan. Tujuan utama adalah menciptakan rangkaian produk serta pengalaman pengguna yang intuitif, elegan, dan relevan bagi para pecinta makeup yang menginginkan hasil maksimal dengan cara yang praktis dan menyenangkan.</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="project blue">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm">
+						<h2>Research & Discovery</h2>
+						<p>Proses riset mendalam dilakukan untuk memahami kebutuhan dan preferensi pengguna, meliputi:</p>
+						<ul>
+							<li>Wawancara dengan 50+ pengguna dari berbagai latar belakang (profesional, remaja, dan beauty enthusiast)</li>
+							<li>Analisis 15 merek makeup kompetitor untuk memahami tren warna, formula, dan kemasan di pasar</li>
+							<li>Sesi observasi rutinitas makeup harian untuk mengidentifikasi tantangan dan kebiasaan pengguna</li>
+							<li>Uji coba produk awal dengan kelompok fokus untuk mengevaluasi tekstur, daya tahan, dan kenyamanan</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="project">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm">
+						<h2>Makeup Design Strategy</h2>
+						<p>Pendekatan desain berfokus pada pengalaman yang estetis dan fungsional, dengan strategi utama:</p>
+						<ul>
+							<li>Formula ringan dan tahan lama yang cocok untuk berbagai jenis kulit</li>
+							<li>Kemasan minimalis dan ergonomis untuk kemudahan penggunaan dan tampilan elegan</li>
+							<li>Palet warna serbaguna yang mendukung berbagai gaya dan tone kulit</li>
+							<li>Komitmen terhadap produk ramah lingkungan dan cruelty-free</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="project blue">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm">
+						<h2>Key Outcomes</h2>
+						<p>Hasil utama dari proyek makeup ini meliputi:</p>
+						<ul>
+							<li>Peningkatan kepuasan pengguna sebesar 75%, berdasarkan survei setelah peluncuran</li>
+							<li>Penurunan waktu aplikasi makeup sebesar 40% berkat kemasan dan formula praktis</li>
+							<li>Peningkatan loyalitas pelanggan sebesar 60% dalam tiga bulan pertama</li>
+							<li>Penghargaan “Best Innovative Beauty Product” dari Beauty Trend Awardst</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="project">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm">
+						<h2>Project Gallery</h2>
+						<div class="project-slider">
+							<input type="radio" name="slider" id="slide1" class="slider-toggle" checked>
+							<input type="radio" name="slider" id="slide2" class="slider-toggle">
+							<input type="radio" name="slider" id="slide3" class="slider-toggle">
+							
+							<div class="slider-container">
+								<div class="slider-slide">
+									<img src="/makeup.jpg" alt="Dashboard App Main Interface">
+								</div>
+								<div class="slider-slide">
+									<img src="./img/dashboard-app3.jpg" alt="Dashboard App Analytics View">
+								</div>
+								<div class="slider-slide">
+									<img src="./img/dashboard-app4.jpg" alt="Dashboard App Mobile View">
+								</div>
+							</div>
+							
+							<div class="slider-controls">
+								<label for="slide1" class="slider-dot"></label>
+								<label for="slide2" class="slider-dot"></label>
+								<label for="slide3" class="slider-dot"></label>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</div>
+
+	<footer id="contact">
+		<h2>Interested in<br>
+			learning more?<br>sijaar@gmail.com</h2>
+			<p>designed & developed by SITI 2025</p>
+		</footer>
+	</body>
+	</html>
